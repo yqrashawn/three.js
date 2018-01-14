@@ -110,7 +110,25 @@
 
 				// model
 				var loader = new THREE.GLTFLoader();
-				loader.load( 'models/gltf/DamagedHelmet/glTF/DamagedHelmet.gltf', function ( gltf ) {
+				/* loader.load( 'models/gltf/DamagedHelmet/glTF/DamagedHelmet.gltf', function ( gltf ) {*/
+				/* loader.load( 'models/gltf/swimmer-gltf/bubbles.gltf', function ( gltf ) {*/
+        /* */
+				/* gltf.scene.traverse( function ( child ) {*/
+        /* */
+				/* if ( child.isMesh ) {*/
+        /* */
+				/* child.material.envMap = envMap;*/
+				/* child.material.needsUpdate = true;*/
+				/* child.castShadow = true;*/
+        /* */
+				/* }*/
+        /* */
+				/* } );*/
+        /* */
+				/* scene.add( gltf.scene );*/
+        /* */
+				/* } );*/
+				loader.load( 'models/gltf/swimmer-gltf/Swimmer.gltf', function ( gltf ) {
 
 					gltf.scene.traverse( function ( child ) {
 
